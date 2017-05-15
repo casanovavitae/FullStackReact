@@ -5,6 +5,7 @@ import Home from './home/home';
 import Main from './main/main';
 import LikeComponent from './like/LikeComponent';
 import ResumeComponent from './resume/ResumeComponent';
+import SurveyComponent from './survey/SurveyComponent';
 
 const tilesData = [
   {
@@ -17,9 +18,9 @@ const tilesData = [
   {
     id: 2,
     img: 'images/grid-list/burger-827309_640.jpg',
-    title: 'Tasty burger',
+    title: 'Survey',
     author: 'pashminu',
-    path: 'Like',
+    path: 'Survey',
   },
   {
     id: 3,
@@ -49,13 +50,13 @@ class ClientComponent extends React.Component {
             <div>
                 <Router>
                     <div>
-                    <Navbar dataList={tilesData}/> 
+                    <Navbar dataList={tilesData}/>
                         <Route exact path="/" component={Home}/>
                         <Route path="/home" component={Home}/>
                         <Route path="/main" component={Main}/>
                         <Route path="/Like" component={LikeComponent}/>
                         <Route path="/Resume" component={ResumeComponent}/>
-                        
+                        <Route path="/Survey" component={SurveyComponent}/>
                     </div>
                 </Router>
             </div>

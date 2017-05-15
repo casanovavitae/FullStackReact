@@ -31,7 +31,7 @@ class NavbarComponent extends React.Component {
 	                            <Link key={tile.id.toString()} to={tile.path}>
 	                                   <li key={tile.id.toString()}>{tile.title}</li>
 	                            </Link>
-	                          ))}
+                      ))}
 				          </ul>
 				        </li>
 				      </ul>

@@ -10,9 +10,6 @@ class ResumeComponent extends React.Component {
 
     constructor(props) {
         super(props);
-        /*<Header data={this.state.resumeData.main} />
-		        <About data={this.state.resumeData.main} />
-		        <Resume data={this.state.resumeData.resume} />*/
     }
 
     render() {
