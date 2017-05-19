@@ -6,6 +6,7 @@ import Main from './main/main';
 import LikeComponent from './like/LikeComponent';
 import ResumeComponent from './resume/ResumeComponent';
 import SurveyComponent from './survey/SurveyComponent';
+import CalculatorComponent from './calculator/CalculatorComponent';
 
 const tilesData = [
   {
@@ -57,6 +58,7 @@ class ClientComponent extends React.Component {
                         <Route path="/Like" component={LikeComponent}/>
                         <Route path="/Resume" component={ResumeComponent}/>
                         <Route path="/Survey" component={SurveyComponent}/>
+                        <Route path="/Calculator" component={CalculatorComponent}/>
                     </div>
                 </Router>
             </div>
