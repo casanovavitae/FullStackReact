@@ -10,6 +10,7 @@ class OutputComponent extends React.Component {
 
     return (
       <div>
+        TEST
       </div>
 
     );

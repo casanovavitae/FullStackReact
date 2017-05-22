@@ -26,9 +26,9 @@ const tilesData = [
   {
     id: 3,
     img: 'images/grid-list/camera-813814_640.jpg',
-    title: 'Camera',
+    title: 'Calculator',
     author: 'Danson67',
-    path: 'Like',
+    path: 'Calculator',
   },
   {
     id: 4,
