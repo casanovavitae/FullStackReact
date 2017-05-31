@@ -1,46 +1,45 @@
-import React from 'react';
+import React , { Component, PropTypes }from 'react';
 
 class RangeComponent extends React.Component {
-
-  constructor(props) {
-    super(props);
-
-    this.state ={
-      value:160
+    constructor(props){
+        super(props);
+        this.state = {
+            value:props.value
+        }
     }
-  }
 
-  /*static defaultProps = {
-    min: 0,
-    max: 245,
+    onChange(event){
+        //console.log(event.target.value);
+        this.props.onChange(this.state.value);
+        this.setState({value:event.target.value});
+    }
+
+    render() {
+        return (
+            <div className="range">
+              <input
+                  type="range"
+                  value={this.state.value}
+                  min={this.props.min}
+                  max={this.props.max}
+                  step={this.props.step}
+                  onChange={this.onChange.bind(this)}
+              />
+            </div>
+        );
+    }
+}
+
+RangeComponent.defaultProps = {
+    min:0,
+    max:245,
     step: 1
-  }*/
+};
 
-  onChange(event){
-    console.log(event.target.value);
-    var state = {
-        value: event.target.value
-    }
-    this.props.onChange(this.state.value);
-    this.setState(state);
-
-  }
-
-  render() {
-
-    return (
-      <div className="range">
-        <input
-          type="range"
-          min={this.props.min}
-          max={this.props.max}
-          step={this.props.step}
-          onChange={this.onChange.bind(this)}
-          />
-      </div>
-
-    );
-  }
+RangeComponent.propTypes = {
+    min: React.PropTypes.number.isRequired,
+    max: React.PropTypes.number.isRequired,
+    step: React.PropTypes.number.isRequired
 }
 
 export default RangeComponent;
