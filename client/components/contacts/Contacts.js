@@ -1,8 +1,10 @@
 import React from 'react';
 import {ListGroup} from 'react-bootstrap';
 import ContactListItem from './ContactListItem';
+import AddContact from './AddContact';
 import AppActions from '../../actions/AppActions';
 import AppStore from '../../stores/AppStore';
+
 
 
 function getContactListItem(contact){
@@ -11,7 +13,7 @@ function getContactListItem(contact){
     );
 }
 
-class Contacts extends React.Component {
+class Contacts extends React.Component  {
     constructor(props){
         super(props);
         this.state = {

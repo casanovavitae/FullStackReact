@@ -9,6 +9,7 @@ import SurveyComponent from './survey/SurveyComponent';
 import CalculatorComponent from './calculator/CalculatorComponent';
 import TextComponent from './text/TextComponent';
 import Contacts from './contacts/Contacts';
+import D3 from './d3/D3';
 
 
 
@@ -54,6 +55,13 @@ const tilesData = [
         title: 'Contacts',
         author: 'fancycrave1',
         path: 'Contacts',
+    },
+    {
+        id: 7,
+        img: 'images/grid-list/morning-819362_640.jpg',
+        title: 'D3',
+        author: 'fancycrave1',
+        path: 'D3',
     }
 
 ];
@@ -80,6 +88,7 @@ class ClientComponent extends React.Component {
                         <Route path="/Calculator" component={CalculatorComponent}/>
                         <Route path="/Text" component={TextComponent}/>
                         <Route path="/Contacts" component={Contacts}/>
+                        <Route path="/d3" component={D3}/>
                     </div>
                 </Router>
             </div>
